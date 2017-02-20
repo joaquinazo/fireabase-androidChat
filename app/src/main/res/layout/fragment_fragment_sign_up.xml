@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="FragmentSignUp"
+    android:background="@color/cardview_light_background"
+    android:backgroundTint="@color/cardview_light_background">
+    android:background="@color/common_google_signin_btn_text_dark_default"
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/Email"
+        android:text="Correo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Password"
+        android:text="Password"
+        android:layout_alignTop="@+id/Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
+    <Button
+        android:text="Sign up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BTNSIGNUPFRAG"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_below="@+id/Password"
+        android:layout_alignStart="@+id/Password" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BTNBACKFRAG"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:background="@android:color/white"
+        android:layout_below="@+id/Password"
+        android:layout_toEndOf="@+id/BTNSIGNUPFRAG" />
+
+</RelativeLayout>
