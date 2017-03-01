@@ -51,6 +51,7 @@ public class FragmentSignUp extends Fragment implements View.OnClickListener {
         registerPresenter.attach(new RegisterPresenter.RegisterPresenterListener() {
             @Override
             public void onSuccess() {
+
                 System.out.println("nuevo user");
             }
 
@@ -76,7 +77,7 @@ public class FragmentSignUp extends Fragment implements View.OnClickListener {
 
         } else if (v.getId() == R.id.BTNSIGNUPFRAG) {
 
-            registerPresenter.doRegister(ETEmail.getText().toString(),"ETName.getText().toString()",ETPassword.getText().toString());
+            registerPresenter.doRegister(ETEmail.getText().toString(),"joako",ETPassword.getText().toString());
 
         }
     }

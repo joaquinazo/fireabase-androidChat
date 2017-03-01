@@ -21,6 +21,7 @@ public class LoginC implements View.OnClickListener{
         loginPresenter.attach(new LoginPresenter.LoginPresenterListener() {
             @Override
             public void onSuccess() {
+
                 System.out.println("Logged");
             }
 

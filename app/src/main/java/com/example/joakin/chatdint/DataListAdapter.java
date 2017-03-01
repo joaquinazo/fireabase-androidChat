@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.utad.chatsdk.data.ChatInstance;
+
 import java.util.ArrayList;
 
 /**
@@ -85,7 +87,7 @@ public class DataListAdapter extends BaseAdapter {
             title = (TextView) row.findViewById(R.id.title);
             i1 = (ImageView) row.findViewById(R.id.img);
             mess = (TextView) row.findViewById(R.id.message);
-            title.setText(Dataholder.instance.User);
+            title.setText(ChatInstance.myUser.getName() + ": ");
             mess.setText(message.get(position));
             title.setTypeface(custom_font);
             mess.setTypeface(custom_font);
